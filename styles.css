@@ -21,14 +21,6 @@ body {
     align-items: center;
 }
 
-.logo {
-    width: 60px;
-    height: 60px;
-    background-color: transparent; 
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
 img{
     width: 60px;
     height: 60px;
@@ -58,7 +50,8 @@ img{
     padding: 10px;
     border-radius: 20px;
     border: none;
-    background-color: #D3D3D3; 
+    background-color: ##F4E3E0; 
+    color: #4B7152;
     width: 200px;
     font-family: "Sahitya", serif;
     font-weight: 400;
@@ -99,11 +92,9 @@ img{
     transition: transform 0.3s ease-in-out;
 }
 
-
 .account-menu.active {
     transform: translateX(0); 
 }
-
 
 .account-menu ul {
     list-style: none;
@@ -129,7 +120,6 @@ img{
 .account-menu ul li a:hover {
     text-decoration: underline;
 }
-
 
 .menu-toggle {
     display: none;
@@ -348,5 +338,82 @@ video {
     
     .nav-links.active .close-menu {
         display: block; 
+    }
+}
+
+@media (max-width: 570px) {
+    .navbar h1 {
+        font-size: 24px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .nav-links{
+        position: fixed;
+        top: 65px;
+    }
+
+    .account-menu ul li a {
+        font-size: 14px;
+        margin-left: -10px;
+        margin-top: -10px;
+    }
+
+    .search-input {
+        display: none; /* Hide search bar input */
+    }
+
+    .search-icon {
+        display: block;
+        color: #E9B9B0;
+    }
+
+    .search-bar button{
+        color: #E9B9B0;
+        position: absolute;
+        right: 75px;
+        font-size: 18px;
+    }
+
+    img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .search-input.active {
+        display: block; /* Show when active */
+        width: 200px; /* You can adjust this as needed */
+        position: absolute;
+        top: 50px;
+        right: 10px;
+    }
+
+    .camera-button, .chat-button{
+        font-size: 14px;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+    }
+
+    .video-container {
+        max-width: 300px;
+    }
+
+    .camera-button{
+        position: absolute;
+        bottom: 60px;
+    }
+
+    .account-icon{
+        font-size: 18px;
+        margin: 0px;
+    }
+
+    .menu-toggle{
+        font-size: 18px;
+        margin: 0px;
     }
 }
