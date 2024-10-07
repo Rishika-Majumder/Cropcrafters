@@ -68,3 +68,14 @@ cameraButton.addEventListener('click', async () => {
         document.querySelector('.video-container').style.display = 'none'; // Hide video
     }
 });
+
+const searchButton = document.querySelector('.search-icon'); // Search button
+const searchInput = document.querySelector('.search-input'); // Search input
+
+searchButton.addEventListener('click', () => {
+    searchInput.classList.toggle('active'); // Toggle active class for search input
+    // Optionally, focus the search input when it becomes visible
+    if (searchInput.classList.contains('active')) {
+        searchInput.focus(); // Focus on the input
+    }
+});
