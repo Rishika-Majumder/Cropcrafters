@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="login-container">
+            <div class="name-and-logo">
+                <img src="logo.png">
+                <p>Cropcrafters</p>
+            </div>
+        <h2>Sign Up</h2>
+        <form id="signupForm">
+            <div class="form-row">
+                <div class="form-column">
+                    <!-- Column 1 -->
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="state">State</label>
+                    <input type="text" id="state" name="state" required>
+
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required>
+
+                    <label for="district">District</label>
+                    <input type="text" id="district" name="district" required>
+                </div>
+
+                <div class="form-column">
+                    <!-- Column 2 -->
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script src="signin.js"></script>
+</body>
+</html>
