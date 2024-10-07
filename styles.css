@@ -416,4 +416,8 @@ video {
         font-size: 18px;
         margin: 0px;
     }
+
+    .account-menu{
+        width:30%;
+    }
 }
