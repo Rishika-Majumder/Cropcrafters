@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cropcrafters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="logo.png">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-and-title">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <h1>Cropcrafters</h1>
+        </div>
+        <div class="search-and-account">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <button class="account-icon"><i class="fa-solid fa-user"></i></button>
+            <button class="menu-toggle" id="menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+    <div class="nav-links" id="nav-links">
+        <a href="#">Weather</a>
+        <a href="#">Soil Test</a>
+        <a href="#">Market</a>
+        <a href="#">Government Policies</a>
+        <a href="#">Diseases</a>
+        <a href="#">Contact Us</a>
+    </div>
+       <div class="account-menu" id="account-menu">
+        <ul>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Language</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">Bookmarks</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Rate Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Log Out</a></li>
+        </ul>
+    </div>
+    
+    <button class="chat-button" id="chat-button"><i class="fa-solid fa-pen"></i></button>
+    <div class="chatbox" id="chatbox">
+        <div class="chat-header">
+            <h2>Cropcrafter AI</h2>
+            <button class="close-chat" id="close-chat">&times;</button>
+        </div>
+        <div class="chat-content">
+            <p>Welcome to the chat! How can we help you?</p>
+            <!-- Chat messages will go here -->
+        </div>
+        <div class="chat-footer">
+            <input type="text" placeholder="Type a message..." class="chat-input">
+            <button class="send-btn">Send</button>
+        </div>
+    </div>
+
+    <button class="camera-button" id="camera-button"><i class="fa-solid fa-camera"></i></button>
+    <div class="video-container">
+        <video id="camera-stream" autoplay playsinline></video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
