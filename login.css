@@ -1,0 +1,84 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: "Sahitya", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    background-color: #F4E3E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+    background-color: #E9B9B0;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+    font-family: "Sahitya", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #5A8261;
+}
+
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    color: #5A8261;
+}
+
+.login-container input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #5A8261;
+    border-radius: 5px;
+    font-family: "Sahitya", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #F4E3E0;
+}
+
+.login-container button {
+    background-color: #5A8261;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 320px;
+    margin-top: 20px;
+    font-family: "Sahitya", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.login-container button:hover {
+    background-color: #4B6D53;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+
+.signup-link {
+    color: #5A8261;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
