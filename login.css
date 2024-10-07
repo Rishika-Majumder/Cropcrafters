@@ -38,7 +38,7 @@ body {
 }
 
 .login-container input {
-    width: 300px;
+    width: 290px;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #5A8261;
@@ -56,7 +56,7 @@ body {
     padding: 10px 10px;
     border-radius: 5px;
     cursor: pointer;
-    width: 320px;
+    width: 310px;
     margin-top: 20px;
     font-family: "Sahitya", serif;
     font-weight: 400;
@@ -81,4 +81,57 @@ body {
 
 .signup-link:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 250px;
+        padding: 30px;
+    }
+    
+    .login-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .login-container button {
+        padding: 10px 15px;
+        width: 245px;
+    }
+
+    .login-container input{
+        width: 230px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 320px) {
+    .login-container {
+        width: 200px;
+        padding: 20px;
+    }
+    
+    .login-container h2 {
+        font-size: 1.2rem;
+    }
+
+    .login-container input {
+        padding: 8px;
+    }
+
+    .login-container button {
+        padding: 8px 10px;
+        width: 190px;
+    }
+
+    .login-container input{
+        width: 180px;
+    }
+
+    .signup-link{
+        font-size: 17px;
+    }
+
+    p{
+        font-size: 17px; 
+    }
 }
