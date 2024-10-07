@@ -12,6 +12,24 @@ body {
     height: 100vh;
 }
 
+.name-and-logo img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.name-and-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-and-logo p{
+    font-size: 40px;
+    color: #4B6D53;
+    margin: -10px;
+}
+
 /* Login Container */
 .login-container {
     background-color: #E9B9B0;
@@ -131,7 +149,20 @@ body {
         font-size: 17px;
     }
 
-    p{
+    .new-user p{
         font-size: 17px; 
+    }
+
+    .name-and-logo img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .name-and-logo p{
+        font-size: 25px; 
+    }
+
+    h1{
+        font-size: 24px;
     }
 }
